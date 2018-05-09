@@ -1,0 +1,32 @@
+{
+  "name": "dsf3-drivercheckin",
+  "version": "1.0.0",
+  "description": "Two players cards game",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "author": "k3vin yan",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-random-string": "^1.0.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "install": "^0.10.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.9",
+    "nodemon": "^1.14.11",
+    "style-loader": "^0.19.1"
+  }
+}

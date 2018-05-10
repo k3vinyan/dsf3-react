@@ -1,6 +1,7 @@
 const path = require('path');
 
 const config = {
+  mode: 'development',
   entry: './app.js',
   output: {
     filename: 'bundle.js',
@@ -14,14 +15,15 @@ const config = {
         exclude: /(node_modules)/,
         loader: 'babel-loader',
         query: {
-          presets: ['react', 'es2015']
+          presets: ['react', 'es2015', 'stage-0']
         }
       },
       {
-        test: /\.css$/,
-        exclude: /(node_modules)/,
-        use: [{loader:"style-loader"}, {loader: "css-loader"}]
-      }
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader']
+        }
     ]
   }
 }
+
+module.exports = config;
